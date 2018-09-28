@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ase
+
+idspace: ASE
+base_url: /obo/ase
+
+products:
+- ase.owl: https://raw.githubusercontent.com/srobb1/apple-snail-expression-pattern-ontology/master/ase.owl
+- ase.obo: https://raw.githubusercontent.com/srobb1/apple-snail-expression-pattern-ontology/master/ase.obo
+
+term_browser: ontobee
+example_terms:
+- ASE_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/srobb1/apple-snail-expression-pattern-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/srobb1/apple-snail-expression-pattern-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/ASE?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/srobb1/apple-snail-expression-pattern-ontology/master/
