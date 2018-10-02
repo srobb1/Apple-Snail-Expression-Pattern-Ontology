@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/ase.owl#>)
+Prefix(:=<http://purl.obolibrary.org/obo/ase.owl/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -7,13 +7,16 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/ase.owl>
-Import(<http://purl.obolibrary.org/obo/ase/imports/uberon_import.owl>)
-Import(<http://purl.obolibrary.org/obo/ase/imports/eco/eco-basic_import.owl>)
-Import(<http://purl.obolibrary.org/obo/ase/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/ase/imports/pato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/ase/imports/uberon_import.owl>)
+Import(<http://purl.obolibrary.org/obo/ase/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/ase/imports/eco/eco-basic_import.owl>)
+Import(<http://purl.obolibrary.org/obo/ase/patterns/definitions.owl>)
 Annotation(rdfs:comment "Apple Snail Expression Pattern Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/ASE_00000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/ECO_0000009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000966>))
 
 
 ############################

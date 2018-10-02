@@ -1,0 +1,41 @@
+pattern_name: transcriptExpressionIn 
+pattern_iri: http://purl.oboibrary.org/obo/upheno/patterns/transcriptExpressionIn
+
+classes:
+  transcript expression evidence: ECO:0000009
+  entity: BFO:0000001
+  punctate: PATO:0001512
+
+relations: 
+  inheres_in: RO:0000052
+  has_part: BFO:0000051
+  qualifier: RO:0002573
+  
+
+
+annotationProperties:
+  exact_synonym: oio:hasExactSynonym 
+
+vars:
+  entity: "'entity'"
+
+name:
+  text: "puntate transcript expression in %s"
+  vars:
+   - entity
+
+annotations:
+  - annotationProperty: exact_synonym
+    text: "punctate transcript expression in %s"
+    vars:
+     - entity
+
+def:
+  text: "punctate transcript expression in %s."
+  vars:
+    - entity
+
+equivalentTo:
+  text: "'has_part' some ('transcript expression evidence' and ('inheres_in' some %s) and ('qualifier' some 'punctate'))"
+  vars:
+    - entity
