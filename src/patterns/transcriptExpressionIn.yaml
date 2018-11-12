@@ -20,7 +20,7 @@ vars:
   entity: "'entity'"
 
 name:
-  text: "puntate transcript expression in %s"
+  text: "punctate transcript expression in %s"
   vars:
    - entity
 
